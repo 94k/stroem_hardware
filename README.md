@@ -59,3 +59,4 @@ You can use a flat screw driver to short RST and GND instead of soldering a swit
 * Reduce size of PCB and plates.
 * Provide footprints for I2C resistors.
 * Provide jumper footprints for backlighting (master/slave).
+* Add ICSP headers
