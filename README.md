@@ -3,6 +3,8 @@ This repository contains the kicad and gerber files for the ström keyboard.
 The PCB and plates are below 100mm x 100mm.
 The ström is a split keyboard with 20 column staggered keys on each half.
 
+![ström](img/ström.jpg)
+
 ## BOM
 * 2 x Top plate
 * 2 x PCB
