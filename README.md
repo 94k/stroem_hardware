@@ -13,7 +13,7 @@ The ström is a split keyboard with 20 column staggered keys on each half.
 * 2 x TRRS jack PJ-320D-A
 * 1 x TRRS cable
 * 40 x Cherry MX compatible switch
-* 40 x Diode
+* 40 x 1N4148 Diode
 * 40 x MX keycap
 * 28 x M2x6 screw
 * 14 x M2 spacer 11mm
@@ -23,13 +23,15 @@ The PCB supports through hole diodes as well as 0805 diodes.
 
 ## Assembly
 The ström is assembled in a similar fashion as most sandwich style keyboards such as the [Let's Split](https://github.com/nicinabox/lets-split-guide) or the [Gherkin](https://imgur.com/a/O9p7n).
-Unlike the Let's split however, the PCB is not invertible, instead it offers two potential footprints for the TRRS jack with the Pro Micro in between.
+Unlike the Let's split however, the PCB is not invertible, instead it offers two potential footprints for the TRRS jack with the Pro Micro in between, the ström also doesn't require any jumper settings.
 The Pro Micro is mounted with the USB towards the PCB on both sides to save space.
 
 By default the ström uses the QMK serial connection to communicate between the two halves, although either I2C support or shared RGB backlighting can be added.
 
 ### Notes
-* The Pro Micro's USB port is close to the solder joint of the switch above, use mask tape or similar over the port to avoid a short.
+* TRRS shorts contacts while plugging and unplugging. *Never plug or unplug the TRRS cable while USB is connected.*
+* The ProMicro's USB port is close to the solder joint of the switch above, use mask tape or similar over the port to avoid a short.
+* If you plan on socketing your ProMicros you may need longer spacers.
 * Some diode footprints are very close together, try to avoid solder bridges or use SMD diodes.
 * J1 is close to the switch footprint next to it, solder the TRRS jack first.
 * You should be able to use 10mm spacers instead of 11mm, although 11mm give you some more room to work with and are recommended.
