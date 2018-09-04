@@ -26,6 +26,21 @@ The ström is assembled in a similar fashion as most sandwich style keyboards su
 Unlike the Let's split however, the PCB is not invertible, instead it offers two potential footprints for the TRRS jack with the Pro Micro in between, the ström also doesn't require any jumper settings.
 The Pro Micro is mounted with the USB towards the PCB on both sides to save space.
 
+1. Solder all the diodes, you can solder them on the top or bottom side of the PCB.
+2. Solder the pins/socket for the ProMicro
+3. Put all the switches into the top plate. The holes are tight so make sure all the switches are level with the plate.
+4. Put the switches with top plate on the PCB, it should be a snug fit.
+5. Make sure no switch pins are bent, they should all go through the PCB.
+6. Solder the two switches above the ProMicro.
+7. Put tape over the ProMicro's USB port and solder or socket the ProMicro.
+8. Flash the ProMicro and test the two soldered switches.
+9. Solder the TRRS jack to one of the two footprints.
+10. Solder the rest of the switches.
+11. Put in the screws and spacers, screw in the bottom plate.
+12. Flash both sides at least once, you only have to flash the master when you update your keymap in the future.
+
+![PCB](img/pcb.jpg)
+
 By default the ström uses the QMK serial connection to communicate between the two halves, although either I2C support or shared RGB backlighting can be added.
 
 ### Notes
@@ -63,4 +78,4 @@ You can use a flat screw driver to short RST and GND instead of soldering a swit
 * Reduce size of PCB and plates.
 * Provide footprints for I2C resistors.
 * Provide jumper footprints for backlighting (master/slave).
-* Add ICSP headers
+* Add ICSP headers.
